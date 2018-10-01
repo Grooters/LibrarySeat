@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.MainActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <ImageButton
+        android:id="@+id/imgButt_mine"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toStartOf="@id/butt_scan"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/mine"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imgButt_mine"
+        app:layout_constraintStart_toStartOf="@id/imgButt_mine"
+        app:layout_constraintEnd_toEndOf="@id/imgButt_mine"
+        android:text="@string/intro"
+        android:textSize="12sp"/>
+
+    <Button
+        android:id="@+id/butt_scan"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:background="@drawable/butt_scan"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:drawableStart="@drawable/scan"
+        android:text="@string/scan_sit"
+        android:textSize="18sp"
+        android:paddingEnd="25dp"
+        android:paddingStart="5dp"/>
+
+    <ImageButton
+        android:id="@+id/imgButt_createQB"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="60dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/qb"
+        app:layout_constraintBottom_toTopOf="@id/butt_scan"
+        app:layout_constraintStart_toEndOf="@id/butt_scan"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imgButt_createQB"
+        app:layout_constraintStart_toStartOf="@id/imgButt_createQB"
+        app:layout_constraintEnd_toEndOf="@id/imgButt_createQB"
+        android:text="@string/createCode"
+        android:visibility="gone"/>
+
+
+
+    <ImageButton
+        android:id="@+id/imgButt_checkState"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="60dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/state"
+        app:layout_constraintBottom_toTopOf="@id/butt_scan"
+        app:layout_constraintStart_toEndOf="@id/butt_scan"
+        android:visibility="visible"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imgButt_checkState"
+        app:layout_constraintStart_toStartOf="@id/imgButt_checkState"
+        app:layout_constraintEnd_toEndOf="@id/imgButt_checkState"
+        android:text="@string/myState"
+        android:visibility="visible"/>
+
+
+    <ImageButton
+        android:id="@+id/imgButt_post"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintStart_toEndOf="@id/butt_scan"
+        app:layout_constraintTop_toBottomOf="@id/butt_scan"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/post"
+        android:background="@android:color/transparent"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imgButt_post"
+        app:layout_constraintStart_toStartOf="@id/imgButt_post"
+        app:layout_constraintEnd_toEndOf="@id/imgButt_post"
+        android:text="@string/post"
+        android:textSize="12sp"/>
+
+    <ImageButton
+        android:id="@+id/imgButt_reserve"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toStartOf="@id/butt_scan"
+        app:layout_constraintTop_toBottomOf="@id/butt_scan"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/check_seat"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imgButt_reserve"
+        app:layout_constraintStart_toStartOf="@id/imgButt_reserve"
+        app:layout_constraintEnd_toEndOf="@id/imgButt_reserve"
+        android:text="@string/reserve_seat"
+        android:textSize="12sp"/>
+
+</android.support.constraint.ConstraintLayout>

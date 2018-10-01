@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/reader"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/edit_user"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/edit_login"
+        android:drawableStart="@drawable/user"
+        android:text="201610098237"/>
+
+    <EditText
+        android:id="@+id/edit_pass"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_user"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edit_login"
+        android:drawableStart="@drawable/pass"
+        android:inputType="textPassword"
+        android:text="lll5304122919"/>
+
+    <Button
+        android:id="@+id/butt_login"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toStartOf="@id/edit_pass"
+        app:layout_constraintEnd_toEndOf="@id/edit_pass"
+        app:layout_constraintTop_toBottomOf="@id/edit_pass"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/butt_login"
+        android:text="@string/login"
+        android:textSize="18sp"/>
+
+</android.support.constraint.ConstraintLayout>

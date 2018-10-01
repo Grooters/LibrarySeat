@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="160dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/edit_mine">
+
+    <TextView
+        android:id="@+id/text_state_name_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_name"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/text_state_time_name"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/text_state_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@id/text_state_time"
+        app:layout_constraintTop_toTopOf="@id/text_state_name_name"
+        app:layout_constraintStart_toEndOf="@id/text_state_name_name"
+        app:layout_constraintStart_toStartOf="@id/text_state_time"/>
+
+
+    <TextView
+        android:id="@+id/text_state_time_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/state_time"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@id/text_state_name_name"
+        app:layout_constraintTop_toBottomOf="@id/text_state_name_name"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/text_state_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toTopOf="@id/text_state_time_name"
+        app:layout_constraintStart_toEndOf="@id/text_state_time_name" />
+
+
+    <TextView
+        android:id="@+id/text_state_seatNum_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seat_num"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@id/text_state_name_name"
+        app:layout_constraintTop_toBottomOf="@id/text_state_time_name"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/text_state_seatNum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintStart_toStartOf="@id/text_state_time"
+        app:layout_constraintEnd_toEndOf="@id/text_state_time"
+        app:layout_constraintTop_toTopOf="@id/text_state_seatNum_name"
+        app:layout_constraintStart_toEndOf="@id/text_state_seatNum_name" />
+
+    <TextView
+        android:id="@+id/text_state_endTime_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/end_time"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@id/text_state_name_name"
+        app:layout_constraintTop_toBottomOf="@id/text_state_seatNum_name"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/text_state_endTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintStart_toStartOf="@id/text_state_time"
+        app:layout_constraintEnd_toEndOf="@id/text_state_time"
+        app:layout_constraintTop_toTopOf="@id/text_state_endTime_name"
+        app:layout_constraintStart_toEndOf="@id/text_state_endTime_name" />
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/imgButt_addTime"-->
+        <!--android:layout_width="23dp"-->
+        <!--android:layout_height="23dp"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/text_state_seatNum_name"-->
+        <!--app:layout_constraintStart_toStartOf="@id/text_state_seatNum_name"-->
+        <!--android:background="@color/transparent"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:src="@drawable/change_time"/>-->
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/imgButt_reduceTime"-->
+        <!--android:layout_width="23dp"-->
+        <!--android:layout_height="23dp"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/text_state_seatNum_name"-->
+        <!--app:layout_constraintStart_toStartOf="@id/text_state_seatNum_name"-->
+        <!--android:background="@color/transparent"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:src="@drawable/change_time"/>-->
+    <!--<TextView-->
+        <!--app:layout_constraintTop_toBottomOf="@id/imgButt_addTime"-->
+        <!--app:layout_constraintStart_toStartOf="@id/imgButt_addTime"-->
+        <!--app:layout_constraintEnd_toEndOf="@id/imgButt_addTime"-->
+        <!--android:text="@string/edit"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="12sp"-->
+        <!--android:textColor="@android:color/black"/>-->
+
+    <ImageButton
+        android:id="@+id/imgButt_quitDown"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="@id/text_state_name"
+        android:background="@color/transparent"
+        app:layout_constraintBottom_toTopOf="@id/imgButt_quitDown_name"
+        android:src="@drawable/down_seat"/>
+
+    <TextView
+        android:id="@+id/imgButt_quitDown_name"
+        app:layout_constraintStart_toStartOf="@id/imgButt_quitDown"
+        app:layout_constraintEnd_toEndOf="@id/imgButt_quitDown"
+        app:layout_constraintBottom_toBottomOf="@id/text_state_endTime"
+        android:text="@string/leave_sit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@android:color/black"/>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

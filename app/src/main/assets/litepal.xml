@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="LibrarySeat" />
+
+    <version value="1" />
+
+    <list>
+        <mapping class="io.github.grooters.libraryseat.model.User"/>
+    </list>
+
+</litepal>

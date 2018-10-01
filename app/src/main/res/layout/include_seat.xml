@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/frame_oneFloor"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="8dp"
+        android:background="@drawable/frame_intro"/>
+
+
+    <TextView
+        android:id="@+id/text_oneFloor_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/frame_oneFloor"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/oneFloor"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black" />
+
+
+    <io.github.grooters.lller.widget.recycler.RecyclerVieWer
+        android:id="@+id/recycler_oneFloor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/transparent"/>
+
+    <TextView
+        android:id="@+id/text_seat_num_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/number_one"
+        app:layout_constraintBottom_toTopOf="@id/imgButt_seat_one_one"
+        app:layout_constraintStart_toStartOf="@id/imgButt_seat_one_one"
+        app:layout_constraintEnd_toEndOf="@id/imgButt_seat_one_one"
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:textColor="@android:color/black"/>
+
+    <ImageButton
+        android:id="@+id/imgButt_seat_one_one"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:background="@drawable/seat"
+        app:layout_constraintStart_toStartOf="@id/text_oneFloor_title"
+        app:layout_constraintTop_toBottomOf="@id/text_oneFloor_title"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:id="@+id/text_time_one_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/time_temp"
+        app:layout_constraintTop_toBottomOf="@id/imgButt_seat_one_one"
+        app:layout_constraintStart_toStartOf="@id/imgButt_seat_one_one"
+        app:layout_constraintEnd_toEndOf="@id/imgButt_seat_one_one"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/text_seat_num_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/number_two"
+        app:layout_constraintBottom_toTopOf="@id/imgButt_seat_one_two"
+        app:layout_constraintStart_toStartOf="@id/imgButt_seat_one_two"
+        app:layout_constraintEnd_toEndOf="@id/imgButt_seat_one_two"
+        android:textSize="12sp"
+        android:textColor="@android:color/black"/>
+
+    <ImageButton
+        android:id="@+id/imgButt_seat_one_two"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:background="@drawable/seat"
+        app:layout_constraintStart_toEndOf="@id/imgButt_seat_one_one"
+        app:layout_constraintTop_toBottomOf="@id/text_oneFloor_title"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/text_time_one_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_temp"
+
+        app:layout_constraintTop_toBottomOf="@id/imgButt_seat_one_two"
+        app:layout_constraintStart_toStartOf="@id/imgButt_seat_one_two"
+        app:layout_constraintEnd_toEndOf="@id/imgButt_seat_one_two"
+        android:textSize="12sp"/>
+
+    <FrameLayout
+        android:id="@+id/frame_twoFloor"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frame_oneFloor"
+        android:layout_margin="8dp"
+        android:background="@drawable/frame_intro"/>
+
+    <TextView
+        android:id="@+id/text_twoFloor_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/frame_twoFloor"
+        app:layout_constraintTop_toBottomOf="@id/frame_oneFloor"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/twoFloor"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/text_seat_num_two_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/number_one"
+        app:layout_constraintBottom_toTopOf="@id/imgButt_seat_two_one"
+        app:layout_constraintStart_toStartOf="@id/imgButt_seat_two_one"
+        app:layout_constraintEnd_toEndOf="@id/imgButt_seat_two_one"
+        android:textSize="12sp"
+        android:textColor="@android:color/black"/>
+
+    <ImageButton
+        android:id="@+id/imgButt_seat_two_one"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/seat"
+        app:layout_constraintStart_toStartOf="@id/text_twoFloor_title"
+        app:layout_constraintTop_toBottomOf="@id/text_twoFloor_title"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/text_time_two_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_temp"
+        app:layout_constraintTop_toBottomOf="@id/imgButt_seat_two_one"
+        app:layout_constraintStart_toStartOf="@id/imgButt_seat_two_one"
+        app:layout_constraintEnd_toEndOf="@id/imgButt_seat_two_one"
+        android:textSize="12sp"/>
+
+
+</android.support.constraint.ConstraintLayout>

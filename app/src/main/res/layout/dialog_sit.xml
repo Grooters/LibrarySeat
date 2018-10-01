@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/edit_mine">
+
+    <TextView
+        android:id="@+id/text_sit_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sit_time"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="30dp"
+/>
+
+    <EditText
+        android:id="@+id/edit_sit_time"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/edit_mine"
+        app:layout_constraintStart_toEndOf="@id/text_sit_time"
+        app:layout_constraintTop_toTopOf="@id/text_sit_time"
+        app:layout_constraintBottom_toBottomOf="@id/text_sit_time"
+        android:gravity="center_vertical" />
+
+    <Button
+        android:id="@+id/butt_setTime"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:background="@drawable/butt_login"
+        android:text="@string/reserve"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toEndOf="@id/edit_sit_time"
+        app:layout_constraintTop_toTopOf="@id/edit_sit_time"
+        app:layout_constraintBottom_toBottomOf="@id/text_sit_time"/>
+
+
+
+</android.support.constraint.ConstraintLayout>

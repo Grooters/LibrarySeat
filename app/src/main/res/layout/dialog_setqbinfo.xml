@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/edit_mine">
+
+    <TextView
+        android:id="@+id/text_qb_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="@string/qb_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="45dp"/>
+
+    <EditText
+        android:id="@+id/edit_qb_content"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toEndOf="@id/text_qb_content"
+        app:layout_constraintBottom_toBottomOf="@id/text_qb_content"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/edit_mine"
+        android:gravity="center_vertical"/>
+
+    <Button
+        android:id="@+id/butt_setQbContent"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toEndOf="@id/edit_qb_content"
+        app:layout_constraintTop_toTopOf="@id/edit_qb_content"
+        app:layout_constraintBottom_toBottomOf="@id/edit_qb_content"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/butt_login"
+        android:text="@string/create"/>
+
+</android.support.constraint.ConstraintLayout>

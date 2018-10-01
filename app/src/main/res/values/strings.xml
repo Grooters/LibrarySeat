@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">LibrarySeat</string>
+    <string name="login">登录</string>
+    <string name="scan_sit">扫码入座</string>
+    <string name="change_avatar">更改头像</string>
+    <string name="app_name_temp">不占座</string>
+    <string name="department">学院</string>
+    <string name="major">专业</string>
+    <string name="name">姓名</string>
+    <string name="intro">个人信息</string>
+    <string name="post">学习社区</string>
+    <string name="reserve_seat">查看座位</string>
+    <string name="reserve">预约</string>
+    <string name="seat_number">入座次数</string>
+    <string name="seat_numberError">在线时长</string>
+    <string name="name_content">李林浪</string>
+    <string name="signature">Android坚挺不倒！</string>
+    <string name="oneFloor">一楼</string>
+    <string name="twoFloor">二楼</string>
+    <string name="time_temp">10:00</string>
+    <string name="sit_time">持续时间</string>
+    <string name="createCode">生成二维码</string>
+    <string name="qb_content">二维码内容</string>
+    <string name="create">创建</string>
+    <string name="jump">跳过</string>
+    <string name="num">学号</string>
+    <string name="number_one">1</string>
+    <string name="number_two">2</string>
+    <string name="number_three">3</string>
+    <string name="myState">我的状态</string>
+    <string name="state_time">累计时长：</string>
+    <string name="text_name">姓名：</string>
+    <string name="seat_num">座位号：</string>
+    <string name="end_time">离座时间：</string>
+    <string name="leave_sit">离座</string>
+
+</resources>
